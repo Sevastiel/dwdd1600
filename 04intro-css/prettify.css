@@ -4,6 +4,7 @@ body {
     margin: 0;
     background-color: #f9fdff;
 }
+
 /*Hex codes - #102525 (Almost Black) #efedff (Almost White) #b0b8e9 (Moonrazer, darker -> 3c3e4f ) #4dab77 (Mintish, darker -> 2a5e41 )*/
 
 /*Header and so forth*/
@@ -63,7 +64,7 @@ main h1 {
     text-align: Left;
     color: #3c3e4f;
     padding: .5rem;
-    margin:0;
+    margin: 0;
     border: none;
 }
 
@@ -72,7 +73,8 @@ main h2 {
     margin-bottom: 0;
     font-size: 1.5rem;
 }
-main h3{
+
+main h3 {
     color: #3c3e4f;
     margin-bottom: 0;
     font-size: 1.3rem;
@@ -80,7 +82,7 @@ main h3{
     text-decoration-color: #4dab77;
 }
 
-main h4{
+main h4 {
     color: #3c3e4f;
     margin-bottom: 0;
     font-size: 1.1rem;
@@ -89,13 +91,6 @@ main h4{
 main p {
     margin: 0;
     color: #3c3e4f
-}
-
-main ol {
-    text-decoration-color: #2a5e41;
-    padding: .5rem;
-    margin: .5rem;
-    background-color: #efedff;
 }
 
 main dl dt {
@@ -115,29 +110,27 @@ main dl dd {
     margin-top: .2rem;
 }
 
-main ul {
-    list-style-type: circle;
+main ol li{
     text-decoration-color: #2a5e41;
-}
-main ol {
-    text-decoration-color: #2a5e41;
-    list-style-type: disc;
     color: #3c3e4f;
     font-size: .9rem;
     margin-left: .5rem;
     padding: .2rem;
 }
 
+main ul {
+    list-style-type: circle;
+    text-decoration-color: #2a5e41;
+}
 main ul li {
     text-decoration-color: #2a5e41;
-    line-height: 100%;
     margin-bottom: .5rem;
     font-size: 1rem;
 }
 
 main strong {
     font-weight: 700;
-    color:#102525;
+    color: #102525;
 }
 
 main em {
@@ -146,7 +139,7 @@ main em {
 
 main address {
     font-style: normal;
-    background-color: #b0b8e9;
+    background-color: #efedff;
     color: #3c3e4f;
     padding: .5rem;
     border-radius: 10px;
