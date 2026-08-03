@@ -99,6 +99,21 @@ main a {
 main a:hover {
     background-color:#eee;
 }
+/*main image stuff*/
+figure.fuckyou {
+    margin: 0 0 0 10px;
+    width: 30%;
+    float: right;
+}
+
+figure.fuckyou img{
+    width: 100%;
+    height: auto;
+}
+figure.fuckyou figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
 
 /* footer stuff here */
 footer {
