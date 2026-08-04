@@ -172,6 +172,7 @@ figure.about img {
 figure.about figcaption {
     text-align: center;
     font-size: .75rem;
+    margin: 0;
 }
 
 /*Gallery stuff*/
