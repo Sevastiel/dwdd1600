@@ -103,7 +103,7 @@ main dl dt {
 
 main dl dd {
     text-decoration-color: #2a5e41;
-    text-decoration-style: circle;
+    text-decoration-style: wavy;
     color: #3c3e4f;
     font-size: 1rem;
     margin-left: 1rem;
