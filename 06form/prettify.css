@@ -5,7 +5,7 @@ body {
     background-color: #f9fdff;
 }
 
-/*Hex codes - #102525 (Almost Black) #efedff (Almost White) #b0b8e9 (Moonrazer, darker -> 3c3e4f ) #4dab77 (Mintish, darker -> 2a5e41 )*/
+/*Hex codes - #102525 (Almost Black) #efedff (Almost White) #b0b8e9 (Moonrazer, darker -> #3c3e4f ) #4dab77 (Mintish, darker -> #2a5e41 )*/
 
 /*Header and so forth*/
 header {
@@ -53,7 +53,7 @@ nav li a:hover {
 nav li.active a:hover {
     color: #b0b8e9;
 }
-
+/*Main ashi*/
 main {
     padding: 1rem 10px;
 }
@@ -61,6 +61,7 @@ main {
 main h1 {
     font-style: normal;
     background-color: #b0b8e9;
+    border-radius: 3px;
     text-align: Left;
     color: #3c3e4f;
     padding: .5rem;
@@ -93,6 +94,7 @@ main p {
     color: #3c3e4f
 }
 
+/*Da lists*/
 main dl dt {
     text-decoration-color: #2a5e41;
     color: #2a5e41;
@@ -103,7 +105,7 @@ main dl dt {
 
 main dl dd {
     text-decoration-color: #2a5e41;
-    text-decoration-style: circle;
+    text-decoration-style: dashed;
     color: #3c3e4f;
     font-size: 1rem;
     margin-left: 1rem;
@@ -128,7 +130,7 @@ main ul li {
     margin-bottom: .5rem;
     font-size: 1rem;
 }
-
+/*Main additives*/
 main strong {
     font-weight: 700;
     color: #102525;
@@ -196,6 +198,91 @@ div.gallery figcaption {
     padding: 0%;
     font-size: 1rem;
     color: #102525;
+}
+
+/*Comma page*/
+
+.comm fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 10px;
+    border: solid 2px #3c3e4f;
+    border-radius: 5px;
+    padding: .5rem;
+    margin: .5rem;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 300;
+    color: #3c3e4f;
+    background-color: #f9fdff;
+}
+
+.comm legend {
+    color: #b0b8e9;
+    font-size: .9rem;
+    font-style: italic;
+    font-weight: 500;
+    padding: .2rem .8rem .2rem .8rem;
+    background-color: #3c3e4f;
+    border-radius: 5px;
+}
+.comm label, .comm select, .comm [type=text], .comm [type=tel], .comm textarea, .comm [type=mail] {
+    color: #102525;
+    padding: none;
+    margin-left: .3rem;
+}
+
+.comm select, .comm [type=text], .comm [type=tel], .comm textarea, .comm [type=mail]{
+    border: solid 1px #2a5e41;
+    color: #102525;
+    padding: .3rem;
+    width: 10rem;
+    border-radius: .3rem;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 300;
+}
+
+.comm label :focus {
+    color: #3c3e4f;
+    background-color: #efedff;
+    border-radius: 3px;
+    border: 8p solid #b0b8e9;
+    font-size: .9rem;
+}
+
+.comm label :hover {
+    color: #3c3e4f;
+    background-color: #efedff;
+    border-radius: 3px;
+    border: 8p solid #b0b8e9;
+}
+
+.comm textarea {
+    height: .8rem;
+    border:solid 2px #4dab77;
+}
+.comm :required{
+    background-color: #efedff;
+    font-weight: 400;
+    border: solid 1px #4dab77;
+    border-radius: 5px;
+    color:#3c3e4f
+}
+
+.comm [type=submit]{
+    background-color: #efedff;
+    border: solid 5px;
+    border-color: #b0b8e9;
+    padding: 1rem;
+    border-radius: 10px;
+    color: #102525;
+    margin: 1rem 0 0 1vw;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.comm [type=submit]:hover{
+    color: #b0b8e9;
+    background-color: #102525;
+    border-color: #4dab77;
 }
 
 /*Footer now*/
