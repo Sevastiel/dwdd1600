@@ -1,0 +1,307 @@
+body {
+    font-family: "Questrial", sans-serif;
+    /* Note - Questrial is being used as it is the closest adjacent to Helvetica pro that Google has */
+    margin: 0;
+    background-color: #f9fdff;
+}
+
+/*Hex codes - #102525 (Almost Black) #efedff (Almost White) #b0b8e9 (Moonrazer, darker -> #3c3e4f ) #4dab77 (Mintish, darker -> #2a5e41 )*/
+
+/*Header and so forth*/
+header {
+    background-color: #efedff;
+    padding: .2rem 10px;
+}
+
+header span {
+    color: #102525;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+/*navigation here*/
+nav {
+    background-color: #4dab77;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0.5px;
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: .8rem 1.2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #102525;
+    font-weight: 700;
+}
+
+nav li.active a {
+    background-color: #b0b8e9;
+    color: #102525;
+}
+
+nav li a:hover {
+    color: #b0b8e9;
+    background-color: #102525;
+}
+
+nav li.active a:hover {
+    color: #b0b8e9;
+}
+/*Main ashi*/
+main {
+    padding: 1rem 10px;
+}
+
+main h1 {
+    font-style: normal;
+    background-color: #b0b8e9;
+    border-radius: 3px;
+    text-align: Left;
+    color: #3c3e4f;
+    padding: .5rem;
+    margin: 0;
+    border: none;
+}
+
+main h2 {
+    color: #2a5e41;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+
+main h3 {
+    color: #3c3e4f;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+    text-decoration: underline;
+    text-decoration-color: #4dab77;
+}
+
+main h4 {
+    color: #3c3e4f;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+}
+
+main p {
+    margin: .3rem;
+    color: #3c3e4f
+}
+
+/*Da lists*/
+main dl dt {
+    text-decoration-color: #2a5e41;
+    color: #2a5e41;
+    font-weight: 700;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+main dl dd {
+    text-decoration-color: #2a5e41;
+    text-decoration-style: dashed;
+    color: #3c3e4f;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-top: .2rem;
+}
+
+main ol li {
+    text-decoration-color: #2a5e41;
+    color: #3c3e4f;
+    font-size: .9rem;
+    margin-left: .5rem;
+    padding: .2rem;
+}
+
+main ul {
+    list-style-type: circle;
+    text-decoration-color: #2a5e41;
+}
+
+main ul li {
+    text-decoration-color: #2a5e41;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+}
+/*Main additives*/
+main strong {
+    font-weight: 700;
+    color: #102525;
+}
+
+main em {
+    font-weight: 700;
+}
+
+main address {
+    font-style: normal;
+    background-color: #efedff;
+    color: #3c3e4f;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid #4dab77;
+    width: 200px;
+}
+
+main a {
+    color: #b0b8e9;
+
+}
+
+main a:hover {
+    color: #4dab77;
+}
+
+/*main image stuff*/
+figure.about {
+    margin: 0 0 0 2px;
+    width: 20%;
+    float: right;
+}
+
+figure.about img {
+    width: 100%;
+    height: auto;
+}
+
+figure.about figcaption {
+    text-align: center;
+    font-size: .75rem;
+    margin: 0;
+}
+
+/*Gallery stuff*/
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+}
+div.gallery img {
+    width: 100%;
+    height: auto;
+    margin: .2rem;
+}
+
+div.gallery figure {
+    margin: 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    padding: 0%;
+    font-size: 1rem;
+    color: #102525;
+}
+
+/*Comma page*/
+
+.comm fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 10px;
+    border: solid 2px #3c3e4f;
+    border-radius: 5px;
+    padding: .5rem;
+    margin: .5rem;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 300;
+    font-size: .9rem;
+    color: #3c3e4f;
+    background-color: #f9fdff;
+}
+
+.comm legend {
+    color: #b0b8e9;
+    font-size: .9rem;
+    font-style: italic;
+    font-weight: 500;
+    padding: .2rem .8rem .2rem .8rem;
+    background-color: #3c3e4f;
+    border-radius: 5px;
+}
+.comm label, .comm select, .comm [type=text], .comm [type=tel], .comm textarea, .comm [type=mail] {
+    color: #102525;
+    padding: 0;
+    margin-left: .3rem;
+}
+
+.comm select, .comm [type=text], .comm [type=tel], .comm textarea, .comm [type=mail]{
+    border: solid 1px #2a5e41;
+    color: #102525;
+    padding: .3rem;
+    width: 10rem;
+    border-radius: .3rem;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 300;
+}
+
+.comm label :focus {
+    color: #3c3e4f;
+    background-color: #efedff;
+    border-radius: 3px;
+    border: 2px solid #b0b8e9;
+
+}
+
+.comm label :hover {
+    color: #3c3e4f;
+    background-color: #efedff;
+    border-radius: 2px;
+    border: 1px solid #b0b8e9;
+
+}
+
+.comm textarea {
+    height: .8rem;
+    border:solid 1px #4dab77;
+}
+.comm :required{
+    background-color: #efedff;
+    font-weight: 400;
+    border: solid 1px #4dab77;
+    border-radius: 5px;
+    color:#3c3e4f
+}
+
+.comm [type=submit]{
+    background-color: #efedff;
+    border: solid 5px;
+    border-color: #b0b8e9;
+    padding: 1rem;
+    border-radius: 10px;
+    color: #102525;
+    margin: 1rem 0 0 1vw;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.comm [type=submit]:hover{
+    color: #b0b8e9;
+    background-color: #102525;
+    border-color: #4dab77;
+}
+
+/*Footer now*/
+footer {
+    background-color: #efedff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: .8rem;
+    color: #102525;
+    letter-spacing: 3px;
+    position: relative;
+
+}
+   footer.footer {
+            clear: both;
+        }
+
+footer p {
+    margin: 0;
+}

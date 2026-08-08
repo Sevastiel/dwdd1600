@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sev Bernards">
+    <meta name="description" content="Interested in comissioning me?">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Questrial&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="prettify.css">
+    <title>Sevastiel's Art Box</title>
+</head>
+
+<body>
+    <!-- start the page header -->
+    <header>
+        <span>Sevastiel's Art Box</span>
+    </header>
+
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li> <a href="index.html">About</a></li>
+            <li> <a href="projects.html">Projects</a></li>
+            <li> <a href="gallery.html">Portfolio</a></li>
+            <li class="active"> <a href="com.html">Comission Me</a></li>
+        </ul>
+    </nav>
+
+    <!-- start the page main -->
+    <main>
+        <h1>Comission form</h1>
+        <form method="get" class="comm" action="yay.html">
+            <fieldset>
+                <legend>Who are you?</legend>
+                <label> Preferred name*<input type="text" name="name" required> </label>
+                <label> First Name <input type="text" name="fname"> </label>
+                <label> Last Name <input type="text" name="lname"> </label>
+                
+            </fieldset>
+            <fieldset>
+                <legend>How should we get in touch?</legend>
+                <label> E-mail* <input type="email" name="email" required placeholder="x@xyz.com"> </label>
+                <label> Number <input type="tel" name="phone" placeholder="123-456-7890"> </label>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Com type*</legend>
+                <label><input type="radio" name="method" value="head" required>Bust</label>
+                <label><input type="radio" name="method" value="half" required>Half Body</label>
+                <label><input type="radio" name="method" value="full" required>Full Body</label>
+                <label><input type="radio" name="method" value="inan" required>Scene/Object</label>
+                <label><input type="radio" name="method" value="chib" required>Chibi</label>
+                <label><input type="radio" name="method" value="anim" required>Animation</label>
+                <label><input type="radio" name="method" value="figs" required>Unsure</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Lighting type*</legend>
+                <label><input type="radio" name="light" value="flat" required>Flat</label>
+                <label><input type="radio" name="light" value="three" required>Cell/3 Tone</label>
+                <label><input type="radio" name="light" value="five" required>Half Paint/5 Tone</label>
+                <label><input type="radio" name="light" value="paint" required>Full Paint</label>
+                <label><input type="radio" name="light" value="figs" required>Unsure</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additions</legend>
+                <label><input type="checkbox" name="multi" value="chosen">Multi character</label>
+                <label><input type="checkbox" name="char" value="chosen">Character Sheet</label>
+                <label><input type="checkbox" name="comp" value="chosen">Complex Background</label>
+                <label><input type="checkbox" name="simp" value="chosen">Simple Background</label>
+
+                <label><input type="checkbox" name="nsfw" value="chosen">NSFW</label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>When do you need it by?</legend>
+                <label><select name="time">
+                        <option value="none">Time select</option>
+                        <option value="week">Within the week</option>
+                        <option value="2week">2-3 Weeks</option>
+                        <option value="month">Sometime in the next month</option>
+                        <option value="year">Not particularly picky!</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>What are we thinking?</legend> <label> <textarea name="comments"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Let's make it happen!">
+        </form>
+    </main>
+
+    <!-- start the page footer -->
+    <footer class="footer">
+        <p>&copy; 2026 &bull; Sev Bernards &bull; Web Essentials</p>
+    </footer>
+</body>
+
+</html>
