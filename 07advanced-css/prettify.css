@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Questrial", sans-serif;
     /* Note - Questrial is being used as it is the closest adjacent to Helvetica pro that Google has */
@@ -20,6 +24,9 @@ header span {
 }
 
 /*navigation here*/
+
+/*Big Nav*/
+@media only screen and (min-width: 801px) {
 nav {
     background-color: #4dab77;
 }
@@ -53,6 +60,52 @@ nav li a:hover {
 nav li.active a:hover {
     color: #b0b8e9;
 }
+}
+/*end big nav*/
+
+/*Lil nav*/
+
+@media only screen and (max-width: 800px) {
+header {
+    text-align: center;
+}
+nav {
+    background-color: #4dab77;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    padding: .2rem 1.2rem;
+    text-decoration: none;
+    border: solid 2px #102525;
+    font-size: 1.2rem;
+    color: #102525;
+    font-weight: 700;
+    text-align: center;
+}
+
+nav li.active a {
+    background-color: #b0b8e9;
+    color: #102525;
+}
+
+nav li a:hover {
+    color: #b0b8e9;
+    background-color: #102525;
+}
+
+nav li.active a:hover {
+    color: #b0b8e9;
+}
+
+}
+/*end lil nav*/
+
 /*Main ashi*/
 main {
     padding: 1rem 10px;
@@ -67,6 +120,7 @@ main h1 {
     padding: .5rem;
     margin: 0;
     border: none;
+    background-image: linear-gradient(to right, #b0b8e9, #efedff);
 }
 
 main h2 {
@@ -177,6 +231,12 @@ figure.about figcaption {
     margin: 0;
 }
 
+.soul {
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+}
+
 /*Gallery stuff*/
 div.gallery {
     display: flex;
@@ -198,6 +258,10 @@ div.gallery figcaption {
     padding: 0%;
     font-size: 1rem;
     color: #102525;
+}
+
+.gallery img:hover {
+        box-shadow: 0px 0px 10px rgba(0,0,0,.8);
 }
 
 /*Comma page*/
@@ -304,4 +368,9 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
 }
