@@ -212,6 +212,7 @@ div.gallery figcaption {
     margin: .5rem;
     font-family: 'Questrial', sans-serif;
     font-weight: 300;
+    font-size: .9rem;
     color: #3c3e4f;
     background-color: #f9fdff;
 }
@@ -227,7 +228,7 @@ div.gallery figcaption {
 }
 .comm label, .comm select, .comm [type=text], .comm [type=tel], .comm textarea, .comm [type=mail] {
     color: #102525;
-    padding: none;
+    padding: 0;
     margin-left: .3rem;
 }
 
@@ -245,20 +246,21 @@ div.gallery figcaption {
     color: #3c3e4f;
     background-color: #efedff;
     border-radius: 3px;
-    border: 8p solid #b0b8e9;
-    font-size: .9rem;
+    border: 2px solid #b0b8e9;
+
 }
 
 .comm label :hover {
     color: #3c3e4f;
     background-color: #efedff;
-    border-radius: 3px;
-    border: 8p solid #b0b8e9;
+    border-radius: 2px;
+    border: 1px solid #b0b8e9;
+
 }
 
 .comm textarea {
     height: .8rem;
-    border:solid 2px #4dab77;
+    border:solid 1px #4dab77;
 }
 .comm :required{
     background-color: #efedff;
