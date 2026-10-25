@@ -352,6 +352,28 @@ div.gallery figcaption {
     border-color: #4dab77;
 }
 
+/*table stuff here*/
+table.price {
+    width: 100%;
+    border-collapse: collapse;
+}
+table.price th {
+    background-color: #102525;
+    color: #b0b8e9;
+    padding: .6rem 2%;
+    text-align: left;
+}
+
+table.price td {
+    color: #3c3e4f;
+    padding: .4rem 2%;
+}
+table.price tr:nth-child(odd) {
+    background-color: #efedff;
+}
+table.price tr:hover {
+    background-color: #b0b8e9;
+}
 
 /*Footer now*/
 footer {
