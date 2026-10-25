@@ -227,8 +227,7 @@ div.gallery figcaption {
     border-radius: 5px;
 }
 
-.comm select, .comm [type=text], .comm [type=tel], .comm textarea, .comm [type=mail],
-{
+.comm select, .comm [type=text], .comm [type=tel], .comm textarea, .comm [type=mail], {
     border: solid 1px #2a5e41;
     color: #102525;
     width: 10rem;
