@@ -263,11 +263,10 @@ div.gallery figcaption {
 .gallery img:hover {
         box-shadow: 0px 0px 10px rgba(0,0,0,.8);
 }
-
 /*Comma page*/
 
 .comm fieldset {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     gap: 5px 10px;
     border: solid 2px #3c3e4f;
@@ -290,26 +289,28 @@ div.gallery figcaption {
     background-color: #3c3e4f;
     border-radius: 5px;
 }
-.comm label, .comm select, .comm [type=text], .comm [type=tel], .comm textarea, .comm [type=mail] {
-    color: #102525;
-    padding: 0;
-    margin-left: .3rem;
-}
 
-.comm select, .comm [type=text], .comm [type=tel], .comm textarea, .comm [type=mail]{
+.comm select, .comm [type=text], .comm [type=tel], .comm textarea, .comm [type=mail], {
     border: solid 1px #2a5e41;
     color: #102525;
-    padding: .3rem;
     width: 10rem;
     border-radius: .3rem;
     font-family: 'Questrial', sans-serif;
     font-weight: 300;
+    float: bottom;
+    display: block;
+}
+
+.comm label {
+    color: #3c3e4f;
+    display: block;
+
 }
 
 .comm label :focus {
     color: #3c3e4f;
     background-color: #efedff;
-    border-radius: 3px;
+    border-radius: .1rem;
     border: 2px solid #b0b8e9;
 
 }
@@ -317,8 +318,8 @@ div.gallery figcaption {
 .comm label :hover {
     color: #3c3e4f;
     background-color: #efedff;
-    border-radius: 2px;
-    border: 1px solid #b0b8e9;
+    border-radius: .1rem;
+    border: 2px solid #b0b8e9;
 
 }
 
@@ -329,8 +330,8 @@ div.gallery figcaption {
 .comm :required{
     background-color: #efedff;
     font-weight: 400;
-    border: solid 1px #4dab77;
-    border-radius: 5px;
+    border: solid 2px #4dab77;
+    border-radius: .1px;
     color:#3c3e4f
 }
 
@@ -350,6 +351,7 @@ div.gallery figcaption {
     background-color: #102525;
     border-color: #4dab77;
 }
+
 
 /*Footer now*/
 footer {
